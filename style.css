@@ -3,3 +3,95 @@
     PROJECT: TaylorShards.github.io
     PURPOSE: Visual & Semiotic Protocols
 */
+
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #a855f7; /* Electric Purple */
+    --border-color: #444;
+    --header-font: 'Courier New', Courier, monospace;
+    --body-font: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+}
+
+header h1, header p {
+    font-family: var(--header-font);
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.status-live {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.file-entry {
+    margin-bottom: 2rem;
+    border: 1px dashed var(--border-color);
+    padding: 1.5rem;
+}
+
+.file-entry h2 {
+    font-family: var(--header-font);
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: '>';
+    margin-right: 0.5em;
+    color: var(--accent-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 0.8rem;
+    color: #888;
+}
