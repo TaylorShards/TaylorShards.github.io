@@ -95,3 +95,18 @@ footer {
     font-size: 0.8rem;
     color: #888;
 }
+
+/* --- ANIMATIONS --- */
+
+.blinking {
+    animation: blink 1.5s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
